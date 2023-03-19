@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM node:18-alpine AS build
+FROM node:19-alpine AS build
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 COPY .babelrc ./
