@@ -1,0 +1,158 @@
+.container {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.container > * {
+  margin: 0;
+  padding: 0;
+}
+
+.headercontainer {
+  width: 100%;
+
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 10px;
+}
+
+.headertitle {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.headertitle:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: var(--main-text-color);
+  border-radius: 2px;
+}
+
+.nav {
+  list-style: none;
+  font-size: 0;
+}
+
+.nav li {
+  width: 140px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.maincontainer {
+  width: 75%;
+}
+
+.main {
+  padding: 10px;
+}
+
+.sidecontainer {
+  width: 25%;
+}
+
+.profilecontainer {
+  height: 80vh;
+  width: 100%;
+
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileimgcontainer,
+.profiledesccontainer,
+.profilelinkcontainer {
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.footercontainer {
+  width: 100%;
+
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 5px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .headercontainer,
+  .maincontainer,
+  .sidecontainer,
+  .footercontainer {
+    width: 100%;
+    height: auto;
+  }
+  .profilecontainer {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title {
+  font-family: "Nico Moji";
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.backToHome {
+  margin: 1rem 2rem;
+}
+
+.article {
+  margin: 1rem;
+}

@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mui/material": "^5.4.0",
+    "date-fns": "^2.11.1",
+    "next": "12.0.9",
+    "rss-parser": "^3.12.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@types/node": "^16.3.3",
+    "@types/react": "^17.0.14",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "chart.js": "^3.7.0",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "react": "17.0.2",
+    "react-chartjs-2": "^4.0.1",
+    "react-dom": "17.0.2",
+    "typescript": "^4.3.5"
+  }
+}

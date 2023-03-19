@@ -1,0 +1,36 @@
+# misc
+README.md
+CHANGELOG.md
+docker-compose.yml
+Dockerfile
+Makefile
+.DS_Store
+.env*
+
+# git
+.git/
+.gitattributes
+.gitignore
+
+# github
+.github/
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vscode
+.vscode/
