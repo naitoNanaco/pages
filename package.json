@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mui/material": "^5.11.13",
+    "@mui/material": "^5.13.5",
     "date-fns": "^2.29.3",
     "next": "12.1.0",
     "rss-parser": "^3.13.0"
